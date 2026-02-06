@@ -1,0 +1,52 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --card-bg: white;
+    --accent: #0070f3;
+}
+
+.dark-mode {
+    --bg-color: #0d1117;
+    --text-color: #c9d1d9;
+    --card-bg: #161b22;
+    --accent: #58a6ff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Fira Code', monospace; /* Fuente tipo código */
+    transition: 0.3s; /* Animación suave al cambiar color */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    text-align: center;
+}
+
+.tags span {
+    background: var(--accent);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin: 5px;
+    display: inline-block;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid var(--accent);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 5px;
+    font-weight: bold;
+}
